@@ -4,14 +4,14 @@ header {
     background: #0F2027;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 60vh;
+    height: 100vh;
 }
 .perfil {
     height: 80%;
     user-select: none;
     &_image {
-        width: 200px;
-        height: 200px;
+        width: 250px;
+        height: 250px;
         object-fit: cover;
         border-radius: 100%;
         box-shadow: 0 0 10px 5px rgba(230, 231, 230, 0.804);
@@ -22,6 +22,7 @@ header {
     &_info{
         width:450px;
         height: 190px;
+        transform: scale(1.2);
 
         &_name {
             text-align: center;
@@ -66,7 +67,7 @@ header {
     }
 
     &-link{
-        font-size: 18px;
+        font-size: 20px;
         font-family: variables.$font_family1;
         color: variables.$color_white;
     }

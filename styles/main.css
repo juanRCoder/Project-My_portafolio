@@ -1,7 +1,7 @@
 header {
   background: #0F2027; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  height: 60vh;
+  height: 100vh;
 }
 
 .perfil {
@@ -11,8 +11,8 @@ header {
           user-select: none;
 }
 .perfil_image {
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
@@ -23,6 +23,7 @@ header {
 .perfil_info {
   width: 450px;
   height: 190px;
+  transform: scale(1.2);
 }
 .perfil_info_name {
   text-align: center;
@@ -62,7 +63,7 @@ header {
   border-radius: 10px;
 }
 .nav-link {
-  font-size: 18px;
+  font-size: 20px;
   font-family: "Oswald", sans-serif;
   color: #fff;
 }
