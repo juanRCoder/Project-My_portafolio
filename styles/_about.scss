@@ -1,0 +1,7 @@
+@use 'variables';
+
+.about {
+    height: 50vh;
+    background-color: variables.$color_white;
+    outline: 1px solid variables.$color_black;
+}

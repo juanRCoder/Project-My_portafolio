@@ -1,39 +1,80 @@
 @use 'variables';
 
 header {
-    outline: 1px solid variables.$color_black;
-    background-color: variables.$background_perfil;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 60vh;
 }
 .perfil {
-    height: 300px;
-
-    &_title{
-        width: 500px;
-        height: 150px;
-
-        h1 {
-            text-align: center;
-            font-size: 50px;
-            margin: auto;
-            height: 50px;
-        }
-        &_animation {
-            color: variables.$color_white;
-        }
-    }
+    height: 80%;
+    user-select: none;
     &_image {
         width: 200px;
         height: 200px;
         object-fit: cover;
         border-radius: 100%;
+        box-shadow: 0 0 10px 5px rgba(230, 231, 230, 0.804);
         transform: scale(1.3);
+        cursor: pointer;
     }
 
+    &_info{
+        width:450px;
+        height: 190px;
+
+        &_name {
+            text-align: center;
+            font-size: 50px;
+            padding: 5px 0;
+            margin: auto;
+            color: variables.$color_white;
+            text-shadow: -3px 3px 2px variables.$color_gray;
+        }
+
+        &_cargo {
+            color: variables.$color_white;
+            text-shadow: -3px 3px 2px variables.$color_gray;
+        }
+
+        &_frase {
+            font-family: variables.$font_family1;
+            font-size: 17px;
+            color: variables.$color_white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+    }
+}
+.container_nav {
+    height: 20%;
 }
 .nav {
 
-    &-link {
+    &-item:nth-child(-n + 4) {
+        margin: 0px;
+        transition-property: margin, transform, border-radius, background-color, box-shadow, text-shadow;
+        transition-duration: .2s;
+    }
+    &-item:nth-child(-n + 4):hover {
+        background-color: variables.$color_navbar;
+        margin: 0px 20px;
+        transform: scale(1.2);
+        box-shadow: 0 0 8px variables.$color_navbar;
+        text-shadow: 0 0 1px variables.$color_white;
+        border-radius: 10px;
+    }
+
+    &-link{
+        font-size: 18px;
+        font-family: variables.$font_family1;
         color: variables.$color_white;
-        font-weight: 700px;
+    }
+    &-link:hover {
+        color: variables.$color_white
+    }
+
+    &-link:visited {
+        color: aquamarine;
     }
 }

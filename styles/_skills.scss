@@ -1,0 +1,7 @@
+@use 'variables';
+
+.skills {
+    height: 70vh;
+    background-color: variables.$color_white;
+    outline: 1px solid variables.$color_black;
+}

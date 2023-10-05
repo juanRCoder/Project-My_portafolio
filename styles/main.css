@@ -1,23 +1,14 @@
 header {
-  outline: 1px solid #000;
-  background-color: #4d4a4f;
+  background: #0F2027; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  height: 60vh;
 }
 
 .perfil {
-  height: 300px;
-}
-.perfil_title {
-  width: 500px;
-  height: 150px;
-}
-.perfil_title h1 {
-  text-align: center;
-  font-size: 50px;
-  margin: auto;
-  height: 50px;
-}
-.perfil_title_animation {
-  color: #fff;
+  height: 80%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .perfil_image {
   width: 200px;
@@ -25,10 +16,88 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
+  box-shadow: 0 0 10px 5px rgba(230, 231, 230, 0.804);
   transform: scale(1.3);
+  cursor: pointer;
+}
+.perfil_info {
+  width: 450px;
+  height: 190px;
+}
+.perfil_info_name {
+  text-align: center;
+  font-size: 50px;
+  padding: 5px 0;
+  margin: auto;
+  color: #fff;
+  text-shadow: -3px 3px 2px #777;
+}
+.perfil_info_cargo {
+  color: #fff;
+  text-shadow: -3px 3px 2px #777;
+}
+.perfil_info_frase {
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
 }
 
+.container_nav {
+  height: 20%;
+}
+
+.nav-item:nth-child(-n+4) {
+  margin: 0px;
+  transition-property: margin, transform, border-radius, background-color, box-shadow, text-shadow;
+  transition-duration: 0.2s;
+}
+.nav-item:nth-child(-n+4):hover {
+  background-color: #0f2630;
+  margin: 0px 20px;
+  transform: scale(1.2);
+  box-shadow: 0 0 8px #0f2630;
+  text-shadow: 0 0 1px #fff;
+  border-radius: 10px;
+}
 .nav-link {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
   color: #fff;
-  font-weight: 700px;
+}
+.nav-link:hover {
+  color: #fff;
+}
+.nav-link:visited {
+  color: aquamarine;
+}
+
+.about {
+  height: 50vh;
+  background-color: #fff;
+  outline: 1px solid #000;
+}
+
+.skills {
+  height: 70vh;
+  background-color: #fff;
+  outline: 1px solid #000;
+}
+
+.contacts {
+  height: 80vh;
+  background-color: #fff;
+  outline: 1px solid #000;
+}
+
+.projects {
+  height: 60vh;
+  background-color: #fff;
+  outline: 1px solid #000;
+}
+
+.footer {
+  height: 20vh;
+  background-color: #777;
 }/*# sourceMappingURL=main.css.map */
