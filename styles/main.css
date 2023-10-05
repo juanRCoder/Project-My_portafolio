@@ -22,6 +22,7 @@ header {
 }
 .perfil_info {
   width: 450px;
+  margin-top: 50px;
   height: 190px;
   transform: scale(1.2);
 }
