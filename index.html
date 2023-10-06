@@ -10,9 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     <title>MyPortafolio</title>
 </head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 <body>
     <header>
-        <div class="perfil d-flex justify-content-evenly align-items-center">
+        <div  id="header" class="perfil d-flex justify-content-evenly align-items-center">
             <img class="perfil_image" src="images/perfil.png" title="Juan Ramirez" alt="perfil.png"/>
             <div class="perfil_info">
                 <h1 class="perfil_info_name">JUAN RAMIREZ</h1>
@@ -25,22 +30,78 @@
         <nav class="container_nav d-flex justify-content-center align-items-center">
             <ul class="nav">
               <li class="nav-item"><a href="#about" class="nav-link">Acerca de mi</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+              <li class="nav-item"><a href="#about" class="nav-link">Skills</a></li>
               <li class="nav-item"><a href="#projects" class="nav-link">Proyectos</a></li>
               <li class="nav-item"><a href="#contact" class="nav-link">Contactame</a></li>
             </ul>
         </nav>
     </header>
-    <section class="about">
-        section ACERCA DE MI
+    <section id="about" class="about">
+        <a href="#header" class="button up">🡩</a>
+        <h2 class="about_title"> Acerca de Mi</h2>
+        <div class="about_paragraph">
+            <p> Acerca de mi , es que soy un joven con grandes sueños e ideas que desarrollar, intento resolver cada cosa que veo con codigo o ya sea arreglarlo con lo que busco en internet, me gusta la naturaleza y tengo algunos ideas no proyectadas pero si apuntadas en mi cuaderno, sobre el mundo de la tecnologia, es un desafio pero con paciencia y aprendizaje constante pudo lograr grandes cosas. Aparte de la programacion tengo una pasion por el dibujo estilo manga anime y juntando mis 2 pasatiempos lograre armar algo bonito, vivo e Perú pero con grandes espectativas de migrar al extranjero y recorrer el mundo a explorar las nuevas tecnologias y metodologias.
+            </p>
+        </div>
     </section>
     <section class="skills">
-        section skills
+        <a href="#projects" class="button down">🡫</a>
+        <div class="skills_lenguajes">
+            <h2 class="skills_lenguajes_title">Skills</h2>
+            <div class="skills_lenguajes_boxlen">
+                <a rel="noreferrer">
+                    <img class="skills_lenguajes_boxlen_len" title="HTML" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5"/>
+                </a>
+                <a rel="noreferrer">
+                    <img class="skills_lenguajes_boxlen_len" title="CSS" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3"/>
+                </a>
+                <a rel="noreferrer">
+                    <img class="skills_lenguajes_boxlen_len" title="javaScript" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript"/>
+                </a>
+                <a rel="noreferrer">
+                    <img class="skills_lenguajes_boxlen_len" title="C" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c"/>
+                </a>
+                <a rel="noreferrer">
+                    <img class="skills_lenguajes_boxlen_len" title="python" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python"/>
+                </a>
+                <a rel="noreferrer">
+                    <img class="skills_lenguajes_boxlen_len" title="mySQL" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql"/>
+                </a>
+                <a rel="noreferrer">
+                    <img class="skills_lenguajes_boxlen_len" title="SQLite3" src="https://www.vectorlogo.zone/logos/sqlite/sqlite-icon.svg" alt="sqlite"/>
+                </a>
+            </div>
+        </div>
+        <div class="skills_framework">
+            <h2 class="skills_tools_title">Frameworks</h2>
+            <div class="skills_lenguajes_boxtool">
+                </a> <a rel="noreferrer"> 
+                    <img class="skills_tools_boxtool_tool" title="Flask" src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask"/>
+                </a>
+            </div>
+        </div>
+        <div class="skills_tools">
+            <h2 class="skills_tools_title">Herramientas</h2>
+            <div class="skills_lenguajes_boxtool">
+                <a>
+                    <img class="skills_lenguajes_boxtool_tool" title="Visual Studio Code" alt="Visual Studio Code" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                </a>
+                <a>
+                    <img class="skills_lenguajes_boxtool_tool" title="git" src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git"/>
+                </a>
+                <a>
+                    <img class="skills_lenguajes_boxtool_tool" title="Github" style="transform: scale(1.5);" src="images/github_logo.png" alt="github"/>
+                </a>
+                <a>
+                    <img class="skills_lenguajes_boxtool_tool sublime" title="SublimeText" src="images/sublime_logo.png" alt="sublimeText"/>
+                </a>
+            </div>
+        </div>
     </section>
-    <section class="projects">
+    <section  id="projects" class="projects">
         section projects
     </section>
-    <section class="contacts">
+    <section  id="contact" class="contacts">
         section contacts
     </section>
     <footer class="footer">
