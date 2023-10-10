@@ -77,6 +77,71 @@ header {
   transform: scale(0.66);
 }
 
+.skills {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #111b2f;
+}
+.skills_about, .skills_Skills {
+  height: 90%;
+  width: 40%;
+  outline: 1px solid #FF4;
+  background-color: #adadad;
+}
+.skills_about {
+  display: grid;
+  place-items: center;
+}
+.skills_skills_box, .skills_SKills_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.skills_about_title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.skills_about_paragraph {
+  text-align: justify;
+  padding: 0px 80px;
+  line-height: 2;
+}
+.skills_SKills_box {
+  height: 110px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  outline: 1px solid black;
+  border-radius: 10px;
+}
+.skills_SKills_box_title {
+  background-color: #FF4;
+  width: 100%;
+  height: 35%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.skills_SKills_box_items {
+  background-color: rgb(142, 142, 44);
+  width: 100%;
+  height: 65%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.skill_title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;

@@ -1,1 +1,70 @@
 @use 'variables';
+
+.skills {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: variables.$background_aboutSkills ;
+
+    &_about, &_Skills {
+        height: 90%;
+        width: 40%;
+        outline: 1px solid #FF4;
+        background-color: variables.$color_lightgray;
+    }
+    &_about {
+        display: grid;
+        place-items: center;
+    }
+    &_skills_box, &_SKills_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    &_about_title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+     &_about_paragraph {
+        text-align: justify;
+        padding: 0px 80px;
+        line-height: 2;
+    }
+
+    &_SKills_box {
+        height: 110px;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        outline: 1px solid black;
+        border-radius: 10px;
+
+        &_title {
+            background-color: #FF4;
+            width: 100%;
+            height: 35%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        &_items {
+            background-color: rgb(142, 142, 44);
+            width: 100%;
+            height: 65%;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+}
+.skill_title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
