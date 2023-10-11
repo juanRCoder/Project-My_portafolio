@@ -82,16 +82,35 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #141820;
+  background-color: #111620;
 }
 .skills_about, .skills_Skills {
   color: #fff;
   height: 90%;
-  width: 40%;
+  width: 50%;
+  position: relative;
 }
 .skills_about {
+  padding: 0 70px;
+}
+.skills_about_container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.skills_about_contenedor {
+  height: 100%;
+  width: 80%;
   display: grid;
   place-items: center;
+  position: absolute;
+  top: 30%;
+  opacity: 0;
+  transition-property: top, opacity;
+  transition-duration: 0.5s;
 }
 .skills_skills_box, .skills_SKills_box {
   display: flex;
@@ -101,9 +120,13 @@ header {
 }
 .skills_about_box {
   position: absolute;
-  /* bottom: 4%;  Para la animacion*/
+  top: -10%;
+  opacity: 0;
+  transition-property: top opacity;
+  transition-duration: 0.5s;
 }
 .skills_about_title {
+  font-family: "Oswald", sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -111,6 +134,7 @@ header {
   text-align: justify;
   padding: 0px 80px;
   line-height: 2;
+  font-family: "Roboto", sans-serif;
 }
 .skills_SKills_box {
   height: 110px;
@@ -123,6 +147,7 @@ header {
   border-radius: 10px;
 }
 .skills_SKills_box_title {
+  font-family: "Oswald", sans-serif;
   border-bottom: 1px solid #fff;
   width: 100%;
   height: 35%;
@@ -148,26 +173,41 @@ header {
   padding-left: 0px;
 }
 .skills_SKills_box_items_list li {
+  font-family: "Roboto", sans-serif;
   padding-left: 20px;
   padding-top: 7px;
 }
 
-.skill_title {
+.middle {
+  border-right: 1px solid #fff;
+}
+
+.skills_title {
+  font-family: "Oswald", sans-serif;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  height: 100%;
-  width: 100%;
 }
 
-.line_middle {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/*CHANGES JAVASCRIPT*/
+.skills_about_box_change {
+  top: 20%;
+  opacity: 1;
+}
+
+.skills_about_contenedor_change {
+  top: 0%;
+  opacity: 1;
+}
+
+.projects {
+  background-color: #1d2536;
+  height: 100vh;
   width: 100%;
-  height: 100%;
-  border-right: 1px solid #fff;
+  position: relative;
+  z-index: 100;
 }
 
 * {

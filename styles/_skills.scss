@@ -10,11 +10,32 @@
     &_about, &_Skills {
         color: variables.$color_white;
         height: 90%;
-        width: 40%;
+        width: 50%;
+        position: relative;
     }
     &_about {
-        display: grid;
-        place-items: center;
+        padding: 0 70px;
+
+        &_container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        &_contenedor {
+            height: 100%;
+            width: 80%;
+            display: grid;
+            place-items: center;
+            position: absolute;
+            top: 30%;
+            opacity: 0;
+            transition-property: top, opacity;
+            transition-duration: .5s;
+        }
     }
     &_skills_box, &_SKills_box {
         display: flex;
@@ -24,9 +45,13 @@
     }
     &_about_box {
         position: absolute;
-        /* bottom: 4%;  Para la animacion*/
+        top: -10%;
+        opacity: 0;
+        transition-property: top opacity;
+        transition-duration: .5s;
     }
     &_about_title {
+        font-family: 'Oswald', sans-serif;
         text-align: center;
         margin-bottom: 20px;
     }
@@ -34,8 +59,8 @@
         text-align: justify;
         padding: 0px 80px;
         line-height: 2;
+        font-family: 'Roboto', sans-serif;
     }
-
     &_SKills_box {
         height: 110px;
         width: 75%;
@@ -43,11 +68,11 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-
         outline: 1px solid #fff;
         border-radius: 10px;
 
         &_title {
+            font-family: 'Oswald', sans-serif;
             border-bottom: 1px solid #fff;
             width: 100%;
             height: 35%;
@@ -57,7 +82,6 @@
             border-top-right-radius: 10px;
             border-top-left-radius: 10px;
         }
-
         &_items {
             width: 100%;
             height: 65%;
@@ -74,6 +98,7 @@
                 padding-left: 0px;
 
                 li {
+                    font-family: 'Roboto', sans-serif;
                     padding-left: 20px;
                     padding-top: 7px;
                 }
@@ -81,19 +106,24 @@
         }
     }
 }
-.skill_title {
+.middle {
+    border-right: 1px solid #fff;
+}
+
+.skills_title {
+    font-family: "Oswald", sans-serif;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 100%;
-    width: 100%;
 }
-.line_middle {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    border-right: 1px solid #fff;
+/*CHANGES JAVASCRIPT*/
+.skills_about_box_change {
+    top: 20%;
+    opacity: 1;
+}
+.skills_about_contenedor_change {
+    top: 0%;
+    opacity: 1;
 }
