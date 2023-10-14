@@ -1,9 +1,6 @@
 @use 'variables';
 
 header {
-    // background: #0F2027;  /* fallback for old browsers */
-    // background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
-    // background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-image: url(../images/background.png);
     background-size: 100%;
     background-repeat: no-repeat;
@@ -46,12 +43,9 @@ header {
 }
 .container_nav {
     padding: 10px 5px;
-    display: flex;
-    justify-content: flex-start;
     position: relative;
 }
 .nav {
-    display: flex;
 
     &-item:nth-child(-n + 4) {
         transition-duration: .2s;
@@ -75,7 +69,6 @@ header {
     position: absolute;
     right: -60px;
     top: -5px;
-    transition: transform .5s ease;
 }
 .logo:hover {
     transform: scale(0.66);
