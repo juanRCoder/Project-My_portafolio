@@ -71,6 +71,13 @@ header {
   transform: scale(0.66);
 }
 
+/*Propiedad temporal */
+.stop {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
 .skills {
   height: 100vh;
   display: flex;
