@@ -1,21 +1,27 @@
-const boxAbout = document.querySelector('.skills_about_box');
-const boxSkills = document.querySelector('.skills_about_contenedor');
+$(document).ready(function() {
+    const boxAbout = $('.skills_about_box');
+    const boxSkills = $('.skills_about_contenedor');
+    const project = $('.click_project');
+    const projectExit = $('.project_modal_content_exit');
 
+    $('.project_modal').hide();
+    project.on('click', () => {
+        $('.project_modal').show();
+    });
 
-const btnModal = document.querySelector('.btn_modal');
-const btnExit = document.querySelector('.btn_exit');
-const modal = document.querySelector('.model');
+    projectExit.on('click', () => {
+        $('.project_modal').hide();
+    })
 
-window.addEventListener('scroll', ()=>{
-    let scrollY = window.scrollY;
-    // console.log(scrollY);
-    setTimeout(() => {
-        if (scrollY >  400 && scrollY <  1130) {
-            boxAbout.classList.add('skills_about_box_change');
-            boxSkills.classList.add('skills_about_contenedor_change');
-        } else {
-            boxAbout.classList.remove('skills_about_box_change');
-            boxSkills.classList.remove('skills_about_contenedor_change');
-        }
-    }, 100);
+    $(window).scroll(function() {
+        let scrollY = $(this).scrollTop();
+            if (scrollY > 400 && scrollY < 1130) {
+                boxAbout.addClass('skills_about_box_change');
+                boxSkills.addClass('skills_about_contenedor_change');
+            }
+            else {
+                boxAbout.removeClass('skills_about_box_change');
+                boxSkills.removeClass('skills_about_contenedor_change');
+            }
+    });
 });

@@ -8,6 +8,8 @@
     <!-- CSS NATIVE -->
     <link rel="stylesheet" href="styles/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald&family=Roboto+Slab&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b5e881eaf3.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>MyPortafolio</title>
 </head>
 <style>
@@ -21,8 +23,8 @@
             <ul class="nav">
               <li class="nav-item"><a href="#skills" class="nav-link">Acerca de mi</a></li>
               <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-              <li class="nav-item stop"><a class="nav-link">Proyectos</a></li>
-              <li class="nav-item stop"><a class="nav-link">Contactame</a></li>
+              <li class="nav-item"><a href="#projects"class="nav-link">Proyectos</a></li>
+              <li class="nav-item"><a class="nav-link">Contactame</a></li>
             </ul>
             <div class="logo">
                 <img src="images/logo.png" />
@@ -51,7 +53,7 @@
         <div class="skills_about">
             <div class="skills_about_contenedor">
                 <h2 class="skills_skills_title">SKILLS</h2>
-                <div class="skills_skills_box">
+                <div class="skills_skills_box skills_skills_box1">
                     <div class="skills_skills_box_title"><h5>Habilidades</h5></div>
                      <div class="skills_skills_box_items">
                          <ul class="skills_skills_box_items_list">
@@ -60,20 +62,15 @@
                             <li>Languaje C</li>
                             <li>Python</li>
                             <li>mySQL</li>
-                            <li>SQLite3</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="skills_skills_box">
-                    <div class="skills_skills_box_title"><h5>Frameworks</h5></div>
-                    <div class="skills_skills_box_items">
-                        <ul class="skills_skills_box_items_list frameworks"> 
+                            <li>MongoDB</li>
+                            <li>NodeJS</li>
                             <li>Flask</li>
                             <li>bootstrap</li>
+                            <li>ExpressJS</li>
                         </ul>
                     </div>
                 </div>
-                <div class="skills_skills_box">
+                <div class="skills_skills_box skills_skills_box2">
                     <div class="skills_skills_box_title"><h5>Herramientas</h5></div>
                     <div class="skills_skills_box_items">
                         <ul class="skills_skills_box_items_list">
@@ -87,6 +84,32 @@
                 </div>
             </div>
         </div>
+    </section>
+    <section id="projects" class="projects">
+        <h1 class="projects_title">Proyectos</h1>
+        <div class="projects_container">
+        <div class="box_project">
+            <div>
+                <div class="box_project_logo">
+                    <i class="fa-solid fa-id-card"></i>
+                    <div class="md"><p class="click_project">Click me</p></div>
+                </div>
+                <h5 class="box_project_text">Register&Login</h5>
+            </div>
+        </div>
+        <div class="box_project"></div>
+        <div class="box_project"></div>
+        <div class="box_project"></div>
+        <div class="box_project"></div>
+        <div class="box_project"></div>
+        <div class="box_project"></div>
+        <div class="box_project"></div>
+        </div>
+        <span class="project_modal">
+            <div class="project_modal_content">
+                <button class="project_modal_content_exit">click</button>
+            </div>
+        </span>
     </section>
     <script src="script.js" type="text/javascript"></script>
 </body>
