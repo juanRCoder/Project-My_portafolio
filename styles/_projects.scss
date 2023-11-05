@@ -1,9 +1,88 @@
 @use 'variables';
 
 .projects {
-    background-color: #1d2536;
     height: 100vh;
     width: 100%;
     position: relative;
-    z-index: 100;
+    background-color: variables.$background_projects;
+
+    &_title {
+        color: #fff;
+        height: 14%;
+        text-align: center;
+        padding: 3% 0px 0px 0px;
+    }
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        height: 84%;
+    }
+}
+
+.box_project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 190px;
+    cursor: pointer;
+    position: relative;
+
+    &_logo {
+        font-size: 80px;
+        padding: 20px;
+        border-radius: 50%;
+        background-color: variables.$color_white;
+        display: grid;
+        place-items: center;
+    }
+     &_text {
+        color: variables.$color_white;
+        margin-bottom: 0px;
+        margin-top: 8px;
+    }
+}
+.md {
+    color: #fff;
+    position: absolute;
+    font-size: 15px;
+    display: grid;
+    place-items: center;
+    background-color: #0d141869;
+    height: 130px;
+    width: 145px;
+    opacity: 0;
+    font-weight: bolder;
+
+    p {
+        margin-bottom: 0px;
+        cursor: pointer;
+    }
+    p:hover {
+        text-shadow: 0 0 4px #fff;
+    }
+}
+.box_project_logo:hover .md {
+    opacity: 1;
+}
+
+.project_modal {
+    background-color: rgba(255, 0, 0, 0.3019607843);
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 200;
+
+    &_content {
+        background-color: blue;
+        height: 150px;
+        width: 300px;
+    }
 }

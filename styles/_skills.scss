@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: variables.$background_aboutSkills ;
+    background-color: variables.$background_aboutSkills;
 
     &_about{
         color: variables.$color_white;
@@ -27,7 +27,7 @@
             display: grid;
             place-items: center;
             position: absolute;
-            top: 30%;
+            top: -30%;
             opacity: 0;
             transition-property: top, opacity;
             transition-duration: .5s;
@@ -57,16 +57,14 @@
     &_skills_title {
         font-family: "Oswald", sans-serif;
         width: 100%;
-        height: 100%;
+        height: 94%;
         display: flex;
         align-items: flex-end;
         justify-content: center;
     }
     &_skills_box {
         height: 110px;
-        width: 75%;
-        outline: 1px solid #fff;
-        border-radius: 10px;
+        width: 90%;
 
         &_title {
             font-family: 'Oswald', sans-serif;
@@ -88,29 +86,36 @@
                 display: grid;
                 height: 100%;
                 grid-template-columns: repeat(3, 33.3%);
-                grid-template-rows: repeat(2, 50%);
-                font-size: 14px;
+                grid-template-rows: repeat(4, 39%);
+                font-size: 15px;
                 list-style-position: inside;
                 padding-left: 0px;
 
                 li {
                     font-family: 'Roboto', sans-serif;
                     padding-left: 20px;
-                    padding-top: 7px;
+                    padding-top: 10%;
                 }
             }
         }
     }
+    &_skills_box1, &_skills_box2 {
+        position: relative;
+        bottom: 45px;
+    }
+    &_skills_box2 {
+        bottom: 77px;
+    }
 }
 .middle {
-    border-right: 1px solid #fff;
+    border-right: 3px ridge;
 }
 /*CHANGES JAVASCRIPT*/
 .skills_about_box_change {
-    top: 20%;
+    top: 15%;
     opacity: 1;
 }
 .skills_about_contenedor_change {
-    top: 0%;
+    top: -3%;
     opacity: 1;
 }
