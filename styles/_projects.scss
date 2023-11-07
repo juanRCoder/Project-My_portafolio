@@ -10,6 +10,7 @@
         color: #fff;
         height: 14%;
         text-align: center;
+        margin-left: 140px;
         padding: 3% 0px 0px 0px;
     }
     &_container {
@@ -19,6 +20,7 @@
         justify-content: center;
         position: relative;
         height: 84%;
+        margin-left: 140px
     }
 }
 
@@ -93,37 +95,56 @@
             font-family: "Roboto";
             width: 54%;
             height: 90%;
-            background-color: darkcyan;
             margin-right: 10px;
+
+            &>h1 {
+                color: #e4eaed;
+                text-align: center;
+                margin: 20px 0;
+            }
+
+            &>p {
+                color: #f1eeee;
+                text-align: justify;
+                padding: 0 20px;
+            }
         }
 
         &_img {
-            background-color: aquamarine;
+            background-color: #34454d;
             height: 90%;
             width: 46%;
-            margin-left: 10px;
+            margin-left: 20px;
         }
 
         &_exit {
             position: absolute;
-            top: 3px;
-            right: 3px;
+            font-size: 40px;
+            color: #aaa;
+            background-color: transparent;
+            top: -5px;
+            right: 10px;
+            border: none;
+        }
+        &_exit:hover {
+            transform: scale(.9);
         }
     }
 }
 
 .modal_enlaces {
-    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 40px;
 
-    &>i {
-        color: red;  
+    &_box>a>i {
+        cursor: pointer;
+        color: #efebeb;
+        font-size: 37px;
     }
-    
-    &>p {
-      color: red;  
-    }
-
-    &_box {
-        color: red;
+    &_box>a>i:hover {
+        transform: scale(1.1);
+        color: #a9a9a9;
     }
 }

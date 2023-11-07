@@ -8,15 +8,15 @@ header {
 }
 
 .perfil {
-  margin-top: 7%;
+  margin: 7% 0px 0px 11%;
   flex-direction: column;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
 .perfil_image {
-  width: 200px;
-  height: 200px;
+  width: 300px;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
@@ -43,13 +43,6 @@ header {
   position: relative;
 }
 
-.nav-item:nth-child(-n+4) {
-  transition-duration: 0.2s;
-}
-.nav-item:nth-child(-n+4):hover {
-  margin: 0px 10px;
-  transform: scale(1.01);
-}
 .nav-link {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
@@ -63,12 +56,23 @@ header {
   cursor: pointer;
   transform: scale(0.6);
   position: absolute;
-  right: -60px;
-  top: -5px;
+  right: -61px;
+  top: 10px;
 }
 
 .logo:hover {
   transform: scale(0.66);
+}
+
+.nav_bar {
+  background-color: rgba(46, 67, 77, 0.5882352941);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 140px;
+  margin-left: -5px;
+  margin-top: -10px;
 }
 
 .skills {
@@ -88,6 +92,7 @@ header {
 .skills_about_container {
   position: relative;
   height: 100%;
+  right: -123px;
 }
 .skills_about_contenedor {
   height: 100%;
@@ -95,15 +100,16 @@ header {
   display: grid;
   place-items: center;
   position: absolute;
-  top: -30%;
-  opacity: 0;
+  top: -5%;
+  right: 50px;
+  opacity: 1;
   transition-property: top, opacity;
   transition-duration: 0.5s;
 }
 .skills_about_box {
   position: absolute;
-  top: -10%;
-  opacity: 0;
+  top: 13%;
+  opacity: 1;
   transition-property: top opacity;
   transition-duration: 0.5s;
 }
@@ -114,7 +120,7 @@ header {
 }
 .skills_about_box_paragraph {
   text-align: justify;
-  padding: 0px 80px;
+  padding: 0px 71px;
   line-height: 2;
   font-family: "Roboto", sans-serif;
 }
@@ -162,25 +168,15 @@ header {
 }
 .skills_skills_box1, .skills_skills_box2 {
   position: relative;
-  bottom: 45px;
+  bottom: 75px;
 }
 .skills_skills_box2 {
   bottom: 77px;
 }
 
-.middle {
-  border-right: 3px ridge;
-}
-
-/*CHANGES JAVASCRIPT*/
-.skills_about_box_change {
-  top: 15%;
-  opacity: 1;
-}
-
-.skills_about_contenedor_change {
-  top: -3%;
-  opacity: 1;
+.title_herramientas {
+  font-size: 2rem;
+  padding-bottom: 17px;
 }
 
 .projects {
@@ -193,6 +189,7 @@ header {
   color: #fff;
   height: 14%;
   text-align: center;
+  margin-left: 140px;
   padding: 3% 0px 0px 0px;
 }
 .projects_container {
@@ -202,6 +199,7 @@ header {
   justify-content: center;
   position: relative;
   height: 84%;
+  margin-left: 140px;
 }
 
 .box_project {
@@ -275,32 +273,51 @@ header {
   font-family: "Roboto";
   width: 54%;
   height: 90%;
-  background-color: darkcyan;
   margin-right: 10px;
 }
+.project_modal_content_info > h1 {
+  color: #e4eaed;
+  text-align: center;
+  margin: 20px 0;
+}
+.project_modal_content_info > p {
+  color: #f1eeee;
+  text-align: justify;
+  padding: 0 20px;
+}
 .project_modal_content_img {
-  background-color: aquamarine;
+  background-color: #34454d;
   height: 90%;
   width: 46%;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .project_modal_content_exit {
   position: absolute;
-  top: 3px;
-  right: 3px;
+  font-size: 40px;
+  color: #aaa;
+  background-color: transparent;
+  top: -5px;
+  right: 10px;
+  border: none;
+}
+.project_modal_content_exit:hover {
+  transform: scale(0.9);
 }
 
 .modal_enlaces {
-  color: red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 40px;
 }
-.modal_enlaces > i {
-  color: red;
+.modal_enlaces_box > a > i {
+  cursor: pointer;
+  color: #efebeb;
+  font-size: 37px;
 }
-.modal_enlaces > p {
-  color: red;
-}
-.modal_enlaces_box {
-  color: red;
+.modal_enlaces_box > a > i:hover {
+  transform: scale(1.1);
+  color: #a9a9a9;
 }
 
 * {

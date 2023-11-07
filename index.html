@@ -14,11 +14,11 @@
     <title>MyPortafolio</title>
 </head>
 <body>
-    <header>
+    <header id="header">
         <nav class="container_nav d-flex">
-            <ul class="nav">
-              <li class="nav-item"><a href="#skills" class="nav-link">Acerca de mi</a></li>
-              <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+            <ul class="nav nav_bar">
+              <li class="nav-item"><a href="#header" class="nav-link">Perfil</a></li>
+              <li class="nav-item"><a href="#skills" class="nav-link">Habilidades</a></li>
               <li class="nav-item"><a href="#projects"class="nav-link">Proyectos</a></li>
               <li class="nav-item"><a class="nav-link">Contactame</a></li>
               <li class="nav-item"><a href="https://github.com/juanRCoder" target="_blank" class="nav-link">Github</a></li>
@@ -36,7 +36,7 @@
         </div>
     </header>
     <section id="skills" class="skills">
-        <div class="skills_about middle">
+        <div class="skills_about">
             <div class="skills_about_container">
                 <div class="skills_about_box">
                     <h2 class="skills_about_box_title">Acerca de Mi</h2>
@@ -49,9 +49,9 @@
         </div>
         <div class="skills_about">
             <div class="skills_about_contenedor">
-                <h2 class="skills_skills_title">SKILLS</h2>
+                <h2 class="skills_skills_title">Habilidades</h2>
                 <div class="skills_skills_box skills_skills_box1">
-                    <div class="skills_skills_box_title"><h5>Habilidades</h5></div>
+                    <div class="skills_skills_box_title"><h5></h5></div>
                      <div class="skills_skills_box_items">
                          <ul class="skills_skills_box_items_list">
                             <li>HTML5/CSS3</li>
@@ -68,7 +68,7 @@
                     </div>
                 </div>
                 <div class="skills_skills_box skills_skills_box2">
-                    <div class="skills_skills_box_title"><h5>Herramientas</h5></div>
+                    <div class="skills_skills_box_title"><h5 class="title_herramientas">Herramientas</h5></div>
                     <div class="skills_skills_box_items">
                         <ul class="skills_skills_box_items_list">
                             <li>VSCode</li>
@@ -104,7 +104,7 @@
         </div>
         <span class="project_modal">
             <div class="project_modal_content">
-                <span class="project_modal_content_img">PHOTO</span>
+                <span class="project_modal_content_img"></span>
                 <div class="project_modal_content_info">
                     <h1>Proyecto 1</h1>
                     <p>
@@ -113,14 +113,14 @@
                     </p>
                     <div class="modal_enlaces">
                         <div class="modal_enlaces_box">
-                            <i class="fa-brands fa-github"></i>
+                            <a href="#" title="GitHub" alt="iconGitHub"><i class="fa-brands fa-github"></i></a>
                         </div>
                         <div class="modal_enlaces_box">
-                            <i class="fa-solid fa-globe"></i>
+                            <a href="#" title="PageWeb" alt="iconWeb"><i class="fa-solid fa-globe"></i></a>
                         </div>
                     </div>
                 </div>
-                <button class="project_modal_content_exit">click</button>
+                <button class="project_modal_content_exit"><i class="fa-solid fa-xmark"></i></button>
             </div>
         </span>
     </section>
