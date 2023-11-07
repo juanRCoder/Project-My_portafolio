@@ -3,6 +3,7 @@ $(document).ready(function() {
     const boxSkills = $('.skills_about_contenedor');
     const project = $('.click_project');
     const projectExit = $('.project_modal_content_exit');
+    const modal = $('.project_modal');
 
     $('.project_modal').hide();
     project.on('click', () => {
@@ -11,6 +12,10 @@ $(document).ready(function() {
 
     projectExit.on('click', () => {
         $('.project_modal').hide();
+    })
+
+    modal.click((event) => {
+        if (event.target === modal[0]) modal.hide();
     })
 
     $(window).scroll(function() {
