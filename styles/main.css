@@ -279,17 +279,27 @@ header {
   color: #e4eaed;
   text-align: center;
   margin: 20px 0;
+  font-size: 30px;
+  font-family: "Oswald";
 }
 .project_modal_content_info > p {
   color: #f1eeee;
   text-align: justify;
-  padding: 0 20px;
+  padding: 12px 20px 0px 20px;
+  font-size: 15px;
+  font-family: "Roboto";
 }
 .project_modal_content_img {
   background-color: #34454d;
   height: 90%;
   width: 46%;
   margin-left: 20px;
+}
+.project_modal_content_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .project_modal_content_exit {
   position: absolute;
