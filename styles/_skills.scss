@@ -28,7 +28,6 @@
             display: grid;
             place-items: center;
             position: absolute;
-            top: -5%;
             right: 50px;
             opacity: 1;
             transition-property: top, opacity;
@@ -38,7 +37,7 @@
     //SECTION ACERCA DE MI
     &_about_box {
         position: absolute;
-        top: 13%;
+        top: 18%;
         opacity: 1;
         transition-property: top opacity;
         transition-duration: .5s;
