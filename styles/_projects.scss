@@ -1,160 +1,118 @@
 @use 'variables';
 
-.projects {
-    height: 100vh;
-    width: 100%;
-    position: relative;
-    background-color: variables.$background_projects;
-
-    &_title {
-        color: #fff;
-        height: 14%;
-        text-align: center;
-        margin-left: 140px;
-        padding: 3% 0px 0px 0px;
-    }
-    &_container {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        height: 84%;
-        margin-left: 140px
-    }
-}
-
-.box_project {
+.projects_container {
+    height: 85%;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    width: 270px;
-    height: 190px;
-    cursor: pointer;
-    position: relative;
+    padding-top: 13px;
 
-    &_logo {
-        font-size: 80px;
-        padding: 20px;
-        border-radius: 50%;
-        background-color: variables.$color_white;
-        display: grid;
-        place-items: center;
+    .contenedor {
+        width: 230px;
+        height: 220px;
+        margin: 12px 22px;
+        perspective: 1000px; /* Ajusta la perspectiva para el efecto 3D */
+        position: relative;
     }
-     &_text {
-        color: variables.$color_white;
-        margin-bottom: 0px;
-        margin-top: 8px;
+
+
+}
+
+//efecto 3D:
+.caja {
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+
+    .frontal, .trasera {
+        position: absolute;
+        width: 230px;
+        height: 220px;
+        border-radius: 12px;
+        backface-visibility: hidden;
+        cursor: pointer;
+    }
+
+    .frontal {
+        background-color: variables.$bg3_page;
+    }
+    .frontal:hover {
+        background-color: variables.$color_white2;
+    }
+
+
+
+    .trasera {
+        background-color: variables.$color_white2;
+        transform: rotateY(180deg);
     }
 }
-.md {
-    color: #fff;
-    position: absolute;
-    font-size: 15px;
-    display: grid;
-    place-items: center;
-    background-color: #0d141869;
-    height: 130px;
-    width: 145px;
-    opacity: 0;
-    font-weight: bolder;
+.girada {
+    transform: rotateY(180deg);
+}
 
+
+
+//Div Frontal:
+.frontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 50%;
+        height: 50%;
+        filter: hue-rotate(90deg);
+    }
     p {
-        margin-bottom: 0px;
-        cursor: pointer;
+        font-size: 20px;
+        padding-top: 13px;
+        font-family: 'Roboto';
+        font-weight: bolder;
     }
-    p:hover {
-        text-shadow: 0 0 4px #fff;
-    }
-}
-.box_project_logo:hover .md {
-    opacity: 1;
 }
 
-.project_modal {
-    background-color: rgb(7 15 18 / 80%);
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100%;
+//Div Trasera:
+.trasera {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    z-index: 200;
 
-    &_content {
-        background-color: #2a383f;
-        height: 400px;
-        width: 750px;
+    h3 {
+        color: #161616;
+        font-family: "Roboto";
+        font-size: 18px;
+        padding: 19px 0px 6px 0px;
+    }
+    p {
+        color: #161616;
+        text-align: justify;
+        padding: 0px 20px;
+        font-family: "Roboto";
+        font-size: 15px;
+    }
+
+    &_icons {
         display: flex;
         align-items: center;
-        position: relative;
+        justify-content: space-evenly;
+        width: 100%;
+        padding-top: 14px;
 
-        &_info {
-            color: white;
-            font-family: "Roboto";
-            width: 54%;
-            height: 90%;
-            margin-right: 10px;
+        div {
+            color: #161616;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
 
-            &>h1 {
-                color: #e4eaed;
-                text-align: center;
-                margin: 20px 0;
-                font-size: 30px;
-                font-family: 'Oswald';
+            .github, .red {
+                font-size: 28px;
             }
-
-            &>p {
-                color: #f1eeee;
-                text-align: justify;
-                padding: 12px 20px 0px 20px;
-                font-size: 15px;
-                font-family: 'Roboto';
+            
+            p {
+                font-size: 12px;
+                padding-top: 3px;
             }
         }
-
-        &_img {
-            background-color: #34454d;
-            height: 90%;
-            width: 46%;
-            margin-left: 20px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-        &_exit {
-            position: absolute;
-            font-size: 40px;
-            color: #aaa;
-            background-color: transparent;
-            top: -5px;
-            right: 10px;
-            border: none;
-        }
-        &_exit:hover {
-            transform: scale(.9);
-        }
-    }
-}
-
-.modal_enlaces {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    margin-top: 40px;
-
-    &_box>a>i {
-        cursor: pointer;
-        color: #efebeb;
-        font-size: 37px;
-    }
-    &_box>a>i:hover {
-        transform: scale(1.1);
-        color: #a9a9a9;
     }
 }

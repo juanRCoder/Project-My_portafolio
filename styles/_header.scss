@@ -1,78 +1,84 @@
 @use 'variables';
 
-header {
-    background-image: url(../images/background.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
+#header {
     height: 100vh;
-    position: relative;
-    z-index: 100;
 }
-.perfil {
-    margin: 7% 0px 0px 11%;
-    flex-direction: column;
-    user-select: none;
 
-    &_image {
-        width: 300px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: 100%;
-        cursor: pointer;
-        border: 3px solid variables.$color_gray;
-        margin-top: 25px;
-    }
+nav {
+    background-color: variables.$bg_page;
+    border-bottom: 3px solid variables.$bg2_page;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+}
 
-    &_info{
-
-        &_name {
-            font-family: 'Oswald', sans-serif;
-            text-align: center;
-            font-size: 58px;
-            padding: 5px 0;
-            margin: auto;
-            color: variables.$color_white;
-        }
-
-        &_cargo {
-            font-family: 'Oswald', sans-serif;
-            color: variables.$color_white;
-            font-size: 20px;
-        }
-    }
-}
-.container_nav {
-    padding: 10px 5px;
-    position: relative;
-}
-.nav {
-
-    &-link {
-        font-family: 'Oswald', sans-serif;
-        font-size: 20px;
-        color: variables.$color_white;
-    }
-    &-link:hover {
-        color: variables.$color_gray;
-    }
-}
-.logo {
-    cursor: pointer;
-    transform: scale(0.6);
-    position: absolute;
-    right: -61px;
-    top: 10px;
-}
-.logo:hover {
-    transform: scale(0.66);
-}
+//NAVBAR
 .nav_bar {
-    background-color: #2e434d96;
+    list-style: none;
+    display: flex;
+
+    a {
+        font-size: 18px;
+        text-decoration: none;
+        color: variables.$color_white;
+        font-family: roboto;
+        padding: 22px 24px; 
+    }
+    a:hover {
+        font-size: 19px;
+        background-color: variables.$color_check;
+    }
+}
+
+
+//PERFIL
+.nav_about {
     display: flex;
     flex-direction: column;
-    position: fixed;
-    height: 100vh;
-    width: 140px;
-    margin-left: -5px;
-    margin-top: -10px;
+    align-items: center;
+    background-color: variables.$bg_page;
+    color: variables.$color_white2;
+    height: 100%;
+    padding-top: 5%;
+    
+    &_img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-top: 49px;
+        cursor: pointer;
+        box-shadow: 0 35px 18px -27px variables.$bg2_page;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(.9);
+            border-radius: 100%;
+        }
+    }
+
+    h1 {
+        font-size: 62px;
+        font-family: sans-serif;
+        margin-top: 54px;
+    }
+
+    h5 {
+        font-size: 21px;
+        font-family: sans-serif;
+    }
+
+    p {
+        text-align: center;
+        font-size: 17px;
+        margin-top: 44px;
+        width: 71%;
+        font-family: "Roboto";
+    }
 }
