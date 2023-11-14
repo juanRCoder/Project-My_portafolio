@@ -1,0 +1,176 @@
+@use 'variables';
+
+.contact_container {
+    height: 87%;
+    background-color: variables.$bg_page;
+    display: flex;
+    flex-wrap: wrap;
+
+    .request, .redes {
+        background-color: variables.$bg_page;
+        width: 50%;
+        height: 100%;
+        padding: 15px;
+    }
+    .request {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+//Formulario de contacto:
+.request_form {
+    background-color: variables.$bg_page;
+    border: 1px solid variables.$bg2_page;
+    height: 490px;
+    width: 444px;
+    border-radius: 12px;
+
+    h3 {
+        color: variables.$color_white;
+        text-align: center;
+        padding: 18px 0px;
+        font-size: 30px;
+        font-family: 'Roboto';
+    }
+    form {
+        height: 400px;
+        padding: 10px 51px;
+
+        input[type="submit"] {
+            color: variables.$color_white;
+            background-color: variables.$bg2_page;
+            margin: 50px 100px 0px 100px;
+            width: 140px;
+            height: 38px;
+            border-radius: 6px;
+            font-family: "Roboto";
+            font-size: 17px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #129f1f;
+        }
+    }
+}
+
+//Inputs:
+.user-box {
+    position: relative;
+
+    input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: variables.$color_white;
+        font-family: 'Roboto';
+        margin-bottom: 25px;
+        border: none;
+        border-bottom: 1px solid variables.$bg2_page;
+        outline: none;
+        background: transparent;
+    }
+    label {
+        position: absolute;
+        font-family: 'Roboto';
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: variables.$color_white;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    input:focus ~ label, input:valid ~ label {
+        top: -20px;
+        left: 0;
+        color: variables.$bg2_page;
+        font-size: 12px;
+    }
+    textarea {
+        border-radius: 10px;
+        width: 100%;
+        height: 164px;
+        position: relative;
+        text-align: justify;
+        top: 38px;
+        padding: 10px 11px;
+        font-size: 14px;
+        font-family: "Roboto";
+        color: hsl(0, 0%, 100%);
+        border: none;
+        outline: none;
+        background: #9e9e9e42;
+        resize: none;
+    }
+    #contadorCaracteres {
+        color: variables.$color_white2;
+        position: absolute;
+        letter-spacing: 2px;
+        font-size: 11px;
+        bottom: -29px;
+        right: 10px;
+    } 
+}
+
+//Otras redes part1:
+.redes_moreContacts, .redes_sociales {
+    color: variables.$color_white2;
+    width: 100%;
+    height: 50%;
+
+    h3 {
+        font-family: 'Roboto';
+        font-size: 28px;
+        margin: 10px 0px 0px 10px;
+    }
+    p {
+        font-size: 23px;
+        margin: 17px 29px 22px 75px;
+        font-family: 'Oswald';
+
+        //a2
+        a {
+            color: variables.$color_azulejo;
+            text-decoration-color: variables.$color_azulejo;
+            padding-left: 52px;
+        }
+        .a1 {
+            padding-left: 84px;
+        }
+        .a3 {
+            padding-left: 73px;
+        }
+    }
+}
+
+//Otras redes part2:
+.redes_sociales>div {
+    display: flex;
+    flex-wrap: wrap;
+    height: 80%;
+    margin-left: 56px;
+    align-items: center;
+
+    span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        margin: 27px 27px;
+    }
+}
+
+//Icons redes sociales:
+.fa-brands, .fab {
+    font-weight: 400;
+    font-size: 47px;
+}

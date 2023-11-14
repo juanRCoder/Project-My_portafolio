@@ -81,7 +81,7 @@ nav {
 .skills h2 {
   color: hsl(0, 0%, 100%);
   margin: 43px 0px 0px 30px;
-  font-size: 36px;
+  font-size: 28px;
   font-family: "Roboto";
 }
 
@@ -225,6 +225,168 @@ nav {
 .trasera_icons div p {
   font-size: 12px;
   padding-top: 3px;
+}
+
+.contact_container {
+  height: 87%;
+  background-color: #161616;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact_container .request, .contact_container .redes {
+  background-color: #161616;
+  width: 50%;
+  height: 100%;
+  padding: 15px;
+}
+.contact_container .request {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_container .redes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.request_form {
+  background-color: #161616;
+  border: 1px solid #0b8116;
+  height: 490px;
+  width: 444px;
+  border-radius: 12px;
+}
+.request_form h3 {
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  padding: 18px 0px;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+.request_form form {
+  height: 400px;
+  padding: 10px 51px;
+}
+.request_form form input[type=submit] {
+  color: hsl(0, 0%, 100%);
+  background-color: #0b8116;
+  margin: 50px 100px 0px 100px;
+  width: 140px;
+  height: 38px;
+  border-radius: 6px;
+  font-family: "Roboto";
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.request_form form input[type=submit]:hover {
+  background-color: #129f1f;
+}
+
+.user-box {
+  position: relative;
+}
+.user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  font-family: "Roboto";
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #0b8116;
+  outline: none;
+  background: transparent;
+}
+.user-box label {
+  position: absolute;
+  font-family: "Roboto";
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: hsl(0, 0%, 100%);
+  pointer-events: none;
+  transition: 0.5s;
+}
+.user-box input:focus ~ label, .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #0b8116;
+  font-size: 12px;
+}
+.user-box textarea {
+  border-radius: 10px;
+  width: 100%;
+  height: 164px;
+  position: relative;
+  text-align: justify;
+  top: 38px;
+  padding: 10px 11px;
+  font-size: 14px;
+  font-family: "Roboto";
+  color: hsl(0, 0%, 100%);
+  border: none;
+  outline: none;
+  background: rgba(158, 158, 158, 0.2588235294);
+  resize: none;
+}
+.user-box #contadorCaracteres {
+  color: #ddd;
+  position: absolute;
+  letter-spacing: 2px;
+  font-size: 11px;
+  bottom: -29px;
+  right: 10px;
+}
+
+.redes_moreContacts, .redes_sociales {
+  color: #ddd;
+  width: 100%;
+  height: 50%;
+}
+.redes_moreContacts h3, .redes_sociales h3 {
+  font-family: "Roboto";
+  font-size: 28px;
+  margin: 10px 0px 0px 10px;
+}
+.redes_moreContacts p, .redes_sociales p {
+  font-size: 23px;
+  margin: 17px 29px 22px 75px;
+  font-family: "Oswald";
+}
+.redes_moreContacts p a, .redes_sociales p a {
+  color: #607d8b;
+  text-decoration-color: #607d8b;
+  padding-left: 52px;
+}
+.redes_moreContacts p .a1, .redes_sociales p .a1 {
+  padding-left: 84px;
+}
+.redes_moreContacts p .a3, .redes_sociales p .a3 {
+  padding-left: 73px;
+}
+
+.redes_sociales > div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 80%;
+  margin-left: 56px;
+  align-items: center;
+}
+.redes_sociales > div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 27px 27px;
+}
+
+.fa-brands, .fab {
+  font-weight: 400;
+  font-size: 47px;
 }
 
 * {
